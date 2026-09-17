@@ -32,15 +32,15 @@ document.addEventListener("DOMContentLoaded", () => {
         header.classList.add("shadow-md");
         menuInner.classList.remove("md:flex-col", "md:justify-center", "md:gap-5", "md:py-6");
         menuInner.classList.add("md:flex-row", "md:justify-between", "md:py-3");
-        menuLogo.classList.remove("md:h-18");
-        menuLogo.classList.add("md:h-11");
+        menuLogo.classList.remove("md:h-28");
+        menuLogo.classList.add("md:h-16");
         navContainer.classList.remove("w-full");
       } else {
         header.classList.remove("shadow-md");
         menuInner.classList.add("md:flex-col", "md:justify-center", "md:gap-5", "md:py-6");
         menuInner.classList.remove("md:flex-row", "md:justify-between", "md:py-3");
-        menuLogo.classList.remove("md:h-11");
-        menuLogo.classList.add("md:h-18");
+        menuLogo.classList.remove("md:h-16");
+        menuLogo.classList.add("md:h-28");
         navContainer.classList.add("w-full");
       }
     });
