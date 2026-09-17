@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cortinas a Medida | Mingo Mar</title>
+<meta name="description" content="Diseño, confección e instalación de sistemas Roller (Sunscreen, Blackout y doble cortina), tradicionales y bandas orientables en Bahía Blanca y Neuquén.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../js/tailwind-config.js"></script>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-bg-light text-text-body min-h-screen flex flex-col font-body antialiased selection:bg-secondary/20">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-dark font-bold px-4 py-2 rounded shadow-md z-[100]">Saltar al contenido principal</a>
+
+<header class="seccion-menu fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-bg-light/95 backdrop-blur-sm border-b border-border-warm shadow-sm py-3 md:py-0">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between md:flex-col md:justify-center md:gap-5 md:py-6 transition-all duration-500 menu-inner">
+      <div class="flex-shrink-0 flex items-center justify-center transition-all duration-500 logo-container">
+        <a href="../index.html" class="flex items-center" aria-label="Mingo Mar - Inicio">
+          <img src="../img/logo.webp" alt="Mingo Mar" loading="eager" width="839" height="323" class="h-10 w-auto md:h-18 transition-all duration-500 menu-logo">
+        </a>
+      </div>
+      <nav class="hidden md:flex space-x-8 font-subtitles items-center justify-center transition-all duration-500 nav-container" aria-label="Menú principal">
+        <a href="../index.html" class="text-primary/70 hover:text-primary hover:border-b-2 hover:border-secondary/50 pb-1 transition-all duration-200 tracking-wider uppercase text-[11px] font-bold font-subtitles">Inicio</a>
+        <a href="../quienes-somos.html" class="text-primary/70 hover:text-primary hover:border-b-2 hover:border-secondary/50 pb-1 transition-all duration-200 tracking-wider uppercase text-[11px] font-bold font-subtitles">¿Quiénes somos?</a>
+        <a href="../index.html#servicios" class="text-primary/70 hover:text-primary hover:border-b-2 hover:border-secondary/50 pb-1 transition-all duration-200 tracking-wider uppercase text-[11px] font-bold font-subtitles">Servicios</a>
+        <a href="../contacto.html" class="text-primary/70 hover:text-primary hover:border-b-2 hover:border-secondary/50 pb-1 transition-all duration-200 tracking-wider uppercase text-[11px] font-bold font-subtitles">Contacto</a>
+        <a href="../tienda.html" class="bg-primary text-bg-light hover:bg-secondary hover:text-primary transition-colors duration-300 px-4 py-2 rounded text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+          Tienda
+          <span class="bg-secondary/20 text-secondary border border-secondary/35 text-[9px] px-1 py-0.5 rounded-sm font-bold uppercase">Construcción</span>
+        </a>
+      </nav>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" type="button" class="text-primary hover:text-secondary focus:outline-none p-2 rounded-md transition-colors" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-bg-light border-t border-border-warm shadow-md">
+    <div class="px-4 pt-3 pb-4 space-y-2 font-subtitles font-bold text-sm">
+      <a href="../index.html" class="block px-3 py-2.5 rounded-lg transition-all text-primary/80 hover:bg-gray-100">Inicio</a>
+      <a href="../quienes-somos.html" class="block px-3 py-2.5 rounded-lg transition-all text-primary/80 hover:bg-gray-100">¿Quiénes somos?</a>
+      <a href="../index.html#servicios" class="block px-3 py-2.5 rounded-lg transition-all bg-secondary/10 text-primary">Servicios</a>
+      <a href="../contacto.html" class="block px-3 py-2.5 rounded-lg transition-all text-primary/80 hover:bg-gray-100">Contacto</a>
+      <a href="../tienda.html" class="block px-3 py-2.5 rounded-lg text-primary/80 hover:bg-gray-100 flex items-center justify-between">
+        <span>Tienda Online</span>
+        <span class="text-[9px] bg-secondary text-primary px-2 py-0.5 rounded font-bold uppercase tracking-wider">Próximamente</span>
+      </a>
+    </div>
+  </div>
+</header>
+<div class="h-20 md:h-36" id="header-placeholder"></div>
+
+<main id="main-content" class="flex-grow focus:outline-none" tabindex="-1">
+  <section class="relative h-[50vh] min-h-[350px] w-full flex items-center justify-center bg-dark text-white overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="../img/servicio-cortinas.webp" alt="Cortinas a medida en living moderno" loading="eager" width="844" height="950" class="w-full h-full object-cover opacity-45 brightness-75">
+      <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/30 to-transparent"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-3xl space-y-4">
+      <span class="text-secondary font-bold text-xs uppercase tracking-widest font-subtitles">La ventana perfecta</span>
+      <h1 class="font-headings text-4xl sm:text-5xl md:text-6xl text-white font-normal leading-tight">Cortinas a Medida</h1>
+      <div class="w-16 h-px bg-secondary mx-auto"></div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 font-body texture-linen">
+    <div class="space-y-16">
+      <div class="space-y-6 text-center max-w-2xl mx-auto">
+        <p class="text-lg sm:text-xl text-dark leading-relaxed font-headings italic">"La luz del sol no debería ser una molestia, sino el marco que define cada día. Creamos la atmósfera perfecta para tus ambientes."</p>
+        <p class="text-sm sm:text-base text-primary/80 leading-relaxed">Diseñamos y confeccionamos la cortina ideal adaptada a las proporciones de tus ventanas, la orientación solar y el estilo de tu hogar u oficina. Resolvemos de forma integral desde la medición hasta la colocación final por operarios propios.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-border-warm/60">
+        <div class="space-y-3"><h3 class="font-headings font-bold text-dark text-lg">Sistemas Roller</h3><p class="text-xs text-primary/75 leading-relaxed">Cortinas Roller Sunscreen (para tamizar la luz natural y mantener la visual exterior), Blackout (para oscurecer ambientes y proporcionar aislamiento térmico) y sistemas de doble cortinado.</p></div>
+        <div class="space-y-3"><h3 class="font-headings font-bold text-dark text-lg">Tradicionales y Bandas</h3><p class="text-xs text-primary/75 leading-relaxed">Confección de cortinas tradicionales con cabezales personalizados, colocación de rieles europeos, barrales de diseño y sistemas de bandas orientables o paneles orientales.</p></div>
+        <div class="space-y-3"><h3 class="font-headings font-bold text-dark text-lg">Motorización Inteligente</h3><p class="text-xs text-primary/75 leading-relaxed">Automatización de cortinas roller y tradicionales mediante motores silenciosos e integración con domótica para control a distancia y programaciones de horarios.</p></div>
+      </div>
+      <div class="bg-bg-light border border-border-warm/60 p-6 sm:p-10 rounded-sm space-y-6 max-w-3xl mx-auto font-body">
+        <h3 class="font-headings font-bold text-dark text-xl text-center">Nuestro Proceso Integrado</h3>
+        <ul class="text-sm text-primary/80 space-y-4">
+          <li class="flex items-start gap-3"><span class="text-secondary font-bold text-lg leading-none">✓</span><span><strong>Medición en Obra sin Cargo:</strong> Nos desplazamos a tu domicilio en Bahía Blanca o Neuquén Capital para relevar dimensiones y evaluar aberturas sin costos adicionales.</span></li>
+          <li class="flex items-start gap-3"><span class="text-secondary font-bold text-lg leading-none">✓</span><span><strong>Muestrario a Domicilio:</strong> Seleccionamos juntos las texturas, colores y aperturas de los tejidos directamente en el lugar donde serán instaladas.</span></li>
+          <li class="flex items-start gap-3"><span class="text-secondary font-bold text-lg leading-none">✓</span><span><strong>Garantía de Colocación:</strong> Operarios especializados de nuestra propia empresa realizan la instalación limpia, garantizando el óptimo funcionamiento.</span></li>
+        </ul>
+      </div>
+      <div class="text-center pt-8 border-t border-border-warm/60 space-y-6">
+        <h4 class="font-headings text-2xl text-dark">¿Empezamos a proyectar tus cortinas?</h4>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 pt-2">
+          <a href="../contacto.html" class="btn-primary w-full sm:w-auto text-xs uppercase tracking-widest shadow-md">Consultar por WhatsApp</a>
+          <a href="../contacto.html" class="btn-secondary w-full sm:w-auto text-xs uppercase tracking-widest">Solicitar Presupuesto</a>
+        </div>
+        <div class="pt-4"><a href="../index.html#servicios" class="text-xs text-secondary hover:text-primary transition-colors font-semibold font-subtitles uppercase tracking-wider">&larr; Volver a Servicios</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-[#F2EFE9] text-primary font-body py-16 border-t border-border-warm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="space-y-6">
+        <a href="../index.html" class="inline-block" aria-label="Mingo Mar - Inicio"><img src="../img/logo.webp" alt="Mingo Mar" loading="lazy" width="839" height="323" class="h-14 w-auto"></a>
+        <p class="text-sm leading-relaxed text-primary/80 max-w-sm font-body">Especialistas en cortinas a medida, retapizados y pisos en Bahía Blanca y Neuquén Capital. Más de 20 años transformando tus ambientes.</p>
+        <div class="flex space-x-4 pt-2">
+          <a href="https://www.facebook.com/mingomar.deco" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-wider text-primary hover:text-secondary transition-colors duration-200" aria-label="Seguir en Facebook">Facebook</a>
+          <span class="text-primary/30">|</span>
+          <a href="https://www.instagram.com/mingomar.deco" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-wider text-primary hover:text-secondary transition-colors duration-200" aria-label="Seguir en Instagram">Instagram</a>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <h4 class="text-xs font-bold text-primary font-headings uppercase tracking-widest border-b border-border-warm pb-2">Sucursales</h4>
+        <div class="space-y-6 text-sm">
+          <div class="space-y-1"><h5 class="font-bold text-primary">Sede Bahía Blanca</h5><p class="text-primary/85">Brown 318 | Tel: (291) 451-9090</p><p class="text-primary/85">Cel: <a href="https://api.whatsapp.com/send?phone=5492914711608" class="hover:text-secondary transition-colors font-semibold">(291) 471-1608</a></p><p class="text-primary/85">Email: <a href="mailto:mingomar@mingomar.com" class="hover:text-secondary transition-colors font-semibold">mingomar@mingomar.com</a></p></div>
+          <div class="space-y-1"><h5 class="font-bold text-primary">Sede Neuquén Capital</h5><p class="text-primary/85">Alcorta 511 | Tel: (299) 442-4912</p><p class="text-primary/85">Cel: <a href="https://api.whatsapp.com/send?phone=5492995296964" class="hover:text-secondary transition-colors font-semibold">(299) 529-6964</a></p><p class="text-primary/85">Email: <a href="mailto:neuquen@mingomar.com" class="hover:text-secondary transition-colors font-semibold">neuquen@mingomar.com</a></p></div>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <h4 class="text-xs font-bold text-primary font-headings uppercase tracking-widest border-b border-border-warm pb-2">Menú del Sitio</h4>
+        <nav class="flex flex-col space-y-3 text-sm font-semibold font-subtitles" aria-label="Navegación del pie de página">
+          <a href="../index.html" class="hover:text-secondary transition-colors duration-200">Inicio</a>
+          <a href="../quienes-somos.html" class="hover:text-secondary transition-colors duration-200">¿Quiénes somos?</a>
+          <a href="../index.html#servicios" class="hover:text-secondary transition-colors duration-200">Servicios</a>
+          <a href="../contacto.html" class="hover:text-secondary transition-colors duration-200">Contacto</a>
+          <a href="../tienda.html" class="hover:text-secondary transition-colors duration-200 flex items-center gap-1.5">Tienda Online <span class="text-[9px] bg-secondary/20 text-primary border border-secondary/35 px-1.5 py-0.5 rounded font-bold uppercase tracking-wide">Construcción</span></a>
+        </nav>
+      </div>
+    </div>
+    <div class="mt-16 pt-8 border-t border-border-warm flex flex-col sm:flex-row items-center justify-between text-xs text-primary/60">
+      <p>&copy; 2026 <strong>Mingo Mar</strong>. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

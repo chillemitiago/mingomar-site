@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Quiénes somos? | Mingo Mar</title>
+<meta name="description" content="Conocé la trayectoria de Mingo Mar, más de 20 años ofreciendo diseño y fabricación a medida de cortinas, toldos, pisos y tapicería para hogares y oficinas.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind-config.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-bg-light text-text-body min-h-screen flex flex-col font-body antialiased selection:bg-secondary/20">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-dark font-bold px-4 py-2 rounded shadow-md z-[100]">Saltar al contenido principal</a>
+
+<header class="seccion-menu fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-bg-light/95 backdrop-blur-sm border-b border-border-warm shadow-sm py-3 md:py-0">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between md:flex-col md:justify-center md:gap-5 md:py-6 transition-all duration-500 menu-inner">
+      <div class="flex-shrink-0 flex items-center justify-center transition-all duration-500 logo-container">
+        <a href="index.html" class="flex items-center" aria-label="Mingo Mar - Inicio">
+          <img src="img/logo.webp" alt="Mingo Mar" loading="eager" width="839" height="323" class="h-10 w-auto md:h-18 transition-all duration-500 menu-logo">
+        </a>
+      </div>
+      <nav class="hidden md:flex space-x-8 font-subtitles items-center justify-center transition-all duration-500 nav-container" aria-label="Menú principal">
+        <a href="index.html" class="text-primary/70 hover:text-primary hover:border-b-2 hover:border-secondary/50 pb-1 transition-all duration-200 tracking-wider uppercase text-[11px] font-bold font-subtitles">Inicio</a>
+        <a href="quienes-somos.html" class="text-primary border-b-2 border-secondary pb-1 tracking-wider uppercase text-[11px] font-bold font-subtitles">¿Quiénes somos?</a>
+        <a href="index.html#servicios" class="text-primary/70 hover:text-primary hover:border-b-2 hover:border-secondary/50 pb-1 transition-all duration-200 tracking-wider uppercase text-[11px] font-bold font-subtitles">Servicios</a>
+        <a href="contacto.html" class="text-primary/70 hover:text-primary hover:border-b-2 hover:border-secondary/50 pb-1 transition-all duration-200 tracking-wider uppercase text-[11px] font-bold font-subtitles">Contacto</a>
+        <a href="tienda.html" class="bg-primary text-bg-light hover:bg-secondary hover:text-primary transition-colors duration-300 px-4 py-2 rounded text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+          Tienda
+          <span class="bg-secondary/20 text-secondary border border-secondary/35 text-[9px] px-1 py-0.5 rounded-sm font-bold uppercase">Construcción</span>
+        </a>
+      </nav>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" type="button" class="text-primary hover:text-secondary focus:outline-none p-2 rounded-md transition-colors" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-bg-light border-t border-border-warm shadow-md">
+    <div class="px-4 pt-3 pb-4 space-y-2 font-subtitles font-bold text-sm">
+      <a href="index.html" class="block px-3 py-2.5 rounded-lg transition-all text-primary/80 hover:bg-gray-100">Inicio</a>
+      <a href="quienes-somos.html" class="block px-3 py-2.5 rounded-lg transition-all bg-secondary/10 text-primary">¿Quiénes somos?</a>
+      <a href="index.html#servicios" class="block px-3 py-2.5 rounded-lg transition-all text-primary/80 hover:bg-gray-100">Servicios</a>
+      <a href="contacto.html" class="block px-3 py-2.5 rounded-lg transition-all text-primary/80 hover:bg-gray-100">Contacto</a>
+      <a href="tienda.html" class="block px-3 py-2.5 rounded-lg text-primary/80 hover:bg-gray-100 flex items-center justify-between">
+        <span>Tienda Online</span>
+        <span class="text-[9px] bg-secondary text-primary px-2 py-0.5 rounded font-bold uppercase tracking-wider">Próximamente</span>
+      </a>
+    </div>
+  </div>
+</header>
+<div class="h-20 md:h-36" id="header-placeholder"></div>
+
+<main id="main-content" class="flex-grow focus:outline-none" tabindex="-1">
+  <div class="relative h-64 md:h-80 w-full overflow-hidden bg-dark">
+    <img src="img/banner-quienes-somos.webp" alt="Diseño de interiores y showroom de Mingo Mar" loading="eager" width="1920" height="700" class="w-full h-full object-cover opacity-45">
+    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+      <span class="text-secondary font-bold text-xs uppercase tracking-widest font-subtitles block mb-2">Nuestra Historia</span>
+      <h1 class="text-4xl md:text-5xl font-headings font-normal text-white tracking-tight">Creadores de espacios únicos</h1>
+    </div>
+  </div>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 texture-linen">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto mb-20">
+      <div class="space-y-6">
+        <h2 class="text-3xl font-headings font-normal text-dark leading-tight">Más de 20 años transformando ambientes</h2>
+        <div class="w-16 h-px bg-secondary opacity-70"></div>
+        <p class="text-primary/80 leading-relaxed font-body text-sm">Con más de dos décadas de trayectoria en el rubro del diseño y equipamiento de interiores, en <strong>Mingo Mar</strong> nos iniciamos comercializando cortinas para hogares y oficinas, para luego especializarnos y ampliar nuestra gama de soluciones a pisos, revestimientos y tapicería artesanal.</p>
+        <p class="text-primary/80 leading-relaxed font-body text-sm">Creemos que el verdadero valor agregado no reside únicamente en la excelente calidad de los productos, sino en brindar un servicio integral llave en mano: desde la medición precisa en obra y el asesoramiento personalizado, hasta la colocación final a cargo de nuestros propios operarios especializados.</p>
+      </div>
+      <div class="bg-bg-light/60 border border-border-warm rounded-sm p-8 md:p-10 shadow-sm space-y-6">
+        <h3 class="text-2xl font-headings font-normal text-dark">Nuestro Compromiso</h3>
+        <ul class="space-y-5 text-sm text-primary/85 font-body">
+          <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span><span><strong>Precisión técnica:</strong> Tomamos las medidas en obra sin costo y fabricamos con milimétrica exactitud.</span></li>
+          <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span><span><strong>Mano de obra especializada:</strong> Colocadores propios que cuidan el aseo y los detalles constructivos de cada entrega.</span></li>
+          <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span><span><strong>Garantía postventa:</strong> Brindamos soporte técnico directo desde nuestras sucursales de Bahía Blanca y Neuquén.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-5xl mx-auto border-t border-border-warm/60 pt-12 sm:pt-16 md:pt-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+        <div class="space-y-4">
+          <span class="text-secondary font-bold text-xs uppercase tracking-widest font-subtitles block">Showrooms Propios</span>
+          <h3 class="font-headings font-normal text-dark text-2xl leading-tight">Presencia en Bahía Blanca y Neuquén</h3>
+          <p class="text-sm leading-relaxed text-primary/80">Nacimos en Bahía Blanca con el compromiso de resolver el equipamiento de interiores de manera honesta y artesanal. Con los años, expandimos nuestra dedicación hacia Neuquén Capital, abriendo un showroom local para atender a toda la región de la Patagonia con la misma cercanía.</p>
+        </div>
+        <div class="space-y-4">
+          <span class="text-secondary font-bold text-xs uppercase tracking-widest font-subtitles block">Garantía de Oficio</span>
+          <h3 class="font-headings font-normal text-dark text-2xl leading-tight">Fabricación e Instalación Propia</h3>
+          <p class="text-sm leading-relaxed text-primary/80">No tercerizamos la confección de nuestras cortinas ni la colocación de pisos y tapizados. Cada etapa es controlada por nuestro propio personal, asegurando que el trato personal, la limpieza en obra y el soporte postventa tengan el sello de calidad de Mingo Mar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-[#F2EFE9] text-primary font-body py-16 border-t border-border-warm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="space-y-6">
+        <a href="index.html" class="inline-block" aria-label="Mingo Mar - Inicio"><img src="img/logo.webp" alt="Mingo Mar" loading="lazy" width="839" height="323" class="h-14 w-auto"></a>
+        <p class="text-sm leading-relaxed text-primary/80 max-w-sm font-body">Especialistas en cortinas a medida, retapizados y pisos en Bahía Blanca y Neuquén Capital. Más de 20 años transformando tus ambientes.</p>
+        <div class="flex space-x-4 pt-2">
+          <a href="https://www.facebook.com/mingomar.deco" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-wider text-primary hover:text-secondary transition-colors duration-200" aria-label="Seguir en Facebook">Facebook</a>
+          <span class="text-primary/30">|</span>
+          <a href="https://www.instagram.com/mingomar.deco" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-wider text-primary hover:text-secondary transition-colors duration-200" aria-label="Seguir en Instagram">Instagram</a>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <h4 class="text-xs font-bold text-primary font-headings uppercase tracking-widest border-b border-border-warm pb-2">Sucursales</h4>
+        <div class="space-y-6 text-sm">
+          <div class="space-y-1"><h5 class="font-bold text-primary">Sede Bahía Blanca</h5><p class="text-primary/85">Brown 318 | Tel: (291) 451-9090</p><p class="text-primary/85">Cel: <a href="https://api.whatsapp.com/send?phone=5492914711608" class="hover:text-secondary transition-colors font-semibold">(291) 471-1608</a></p><p class="text-primary/85">Email: <a href="mailto:mingomar@mingomar.com" class="hover:text-secondary transition-colors font-semibold">mingomar@mingomar.com</a></p></div>
+          <div class="space-y-1"><h5 class="font-bold text-primary">Sede Neuquén Capital</h5><p class="text-primary/85">Alcorta 511 | Tel: (299) 442-4912</p><p class="text-primary/85">Cel: <a href="https://api.whatsapp.com/send?phone=5492995296964" class="hover:text-secondary transition-colors font-semibold">(299) 529-6964</a></p><p class="text-primary/85">Email: <a href="mailto:neuquen@mingomar.com" class="hover:text-secondary transition-colors font-semibold">neuquen@mingomar.com</a></p></div>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <h4 class="text-xs font-bold text-primary font-headings uppercase tracking-widest border-b border-border-warm pb-2">Menú del Sitio</h4>
+        <nav class="flex flex-col space-y-3 text-sm font-semibold font-subtitles" aria-label="Navegación del pie de página">
+          <a href="index.html" class="hover:text-secondary transition-colors duration-200">Inicio</a>
+          <a href="quienes-somos.html" class="hover:text-secondary transition-colors duration-200">¿Quiénes somos?</a>
+          <a href="index.html#servicios" class="hover:text-secondary transition-colors duration-200">Servicios</a>
+          <a href="contacto.html" class="hover:text-secondary transition-colors duration-200">Contacto</a>
+          <a href="tienda.html" class="hover:text-secondary transition-colors duration-200 flex items-center gap-1.5">Tienda Online <span class="text-[9px] bg-secondary/20 text-primary border border-secondary/35 px-1.5 py-0.5 rounded font-bold uppercase tracking-wide">Construcción</span></a>
+        </nav>
+      </div>
+    </div>
+    <div class="mt-16 pt-8 border-t border-border-warm flex flex-col sm:flex-row items-center justify-between text-xs text-primary/60">
+      <p>&copy; 2026 <strong>Mingo Mar</strong>. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
